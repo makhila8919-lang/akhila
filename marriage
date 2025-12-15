@@ -1,0 +1,31 @@
+import java.util.Scanner;
+class Matermony{
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        System.out.println("enter the gender:");
+        String gender=s.next();
+         System.out.println("enter the age:");
+            int age=s.nextInt();
+        if(gender.equals("male"))
+        {
+            if(age>=21){
+                System.out.println("elegible to marry");
+            }
+            else
+            {
+                System.out.println(" not elegible to marry");
+            }
+        }
+        else
+        {
+            if(age>=18){
+                System.out.println("elegible to marry");
+            }
+            else
+            {
+                System.out.println(" not elegible to marry");
+            }
+        }
+        
+    }
+}
