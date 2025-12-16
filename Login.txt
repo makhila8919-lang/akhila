@@ -1,0 +1,36 @@
+package day2;
+
+class Sinup{
+	 private String name;
+	 private String password;
+	 public void setUp(String name, String password) {
+	        if (password.length() >= 8) {
+	            this.name = name;
+	            this.password = password;
+	            System.out.println("Login details set successfully.");
+	        } else {
+	            System.out.println("Password must be at least 8 characters long.");
+	        }
+	    }
+	    public String getName() {
+	        return name;
+	    }
+
+	    public String getPassword() {
+	        return password;
+	    }
+}
+public class Login {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		 Sinup s= new Sinup();
+
+	        s.setUp("Akhila", "pass123");      
+	        s.setUp("Akhila", "password123"); 
+
+	        System.out.println("Username: " + s.getName());
+	}
+
+}
